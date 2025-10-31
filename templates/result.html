@@ -1,26 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>✅ Encryption Completed</title>
-<style>
-body { background:#e8f0fe; font-family:'Segoe UI'; text-align:center; }
-.card {
-  width:450px; background:white; margin:80px auto; padding:25px;
-  border-radius:15px; box-shadow:0 4px 15px rgba(0,0,0,0.1);
-}
-a { color:#0078d4; text-decoration:none; }
-a:hover { text-decoration:underline; }
-</style>
+  <meta charset="UTF-8">
+  <title>Encryption Complete</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #50e3c2, #4a90e2);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+      font-family: 'Poppins', sans-serif;
+    }
+    .container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 420px;
+    }
+    .token-box {
+      background: #f8f8f8;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    a {
+      display: block;
+      background: #4a90e2;
+      color: white;
+      padding: 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+      transition: 0.3s;
+    }
+    a:hover {
+      background: #357abd;
+    }
+  </style>
 </head>
 <body>
-<div class="card">
-  <h2>✅ Encryption Successful!</h2>
-  <p><b>Your One-Time Token:</b></p>
-  <p style="color:green; font-size:20px;">{{ token }}</p>
-  <p><b>Sharable Link:</b></p>
-  <a href="{{ link }}" target="_blank">{{ link }}</a>
-  <p style="font-size:13px; color:#555;">Share this token and link securely with the receiver for decryption.</p>
-</div>
+  <div class="container">
+    <h1>✅ Encryption Successful!</h1>
+    <p>Share the below token and link securely with your receiver.</p>
+    <p><b>One-Time Token:</b></p>
+    <div class="token-box">{{ token }}</div>
+    <a href="{{ link }}" target="_blank">🔗 View/Download Encrypted Data</a>
+    <p style="font-size: 13px; color:#555;">Use this link and token for decryption.</p>
+  </div>
 </body>
 </html>
