@@ -4,3 +4,4 @@ pillow
 cryptography
 boto3
 python-dotenv
+gunicorn
